@@ -53,8 +53,8 @@ impl Tweet {
     }
 }
 
-#[table_name = "tweets"]
 #[derive(Queryable, Insertable)]
+#[table_name = "tweets"]
 pub struct TweetDB {
     pub id: Uuid,
     pub created_at: NaiveDateTime,
